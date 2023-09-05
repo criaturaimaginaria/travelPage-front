@@ -30,8 +30,8 @@ function DataList({
           .slice() // Crear una copia del arreglo para no modificar el original
           .sort((a, b) => a.country.localeCompare(b.country)) 
         .map((item) => (
-          <div className='item'>
-            <li key={item.id}>
+          <div key={item.id} className='item'>
+            <li >
 
               {/* <strong>ISO:</strong> {item.iso} */}
               <img src={`/flags/${item.iso}.png`}></img>
